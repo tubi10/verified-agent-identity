@@ -110,7 +110,7 @@ Prompt injection and arbitrary code execution are structurally impossible: the e
 
 ### Network and External Binary Policy
 
-- All external http calls will be made to trusted resources.
+- All external https calls will be made to trusted resources. Signed JWS attestation (proof of agent ownership) is encoded securely by utilizing robust security practices and sent within user context directly to agent owner. It requires an explicit user consent to pass it to any external source. It is not sent automatically anywhere without user participation.
 - No external binary other than `openclaw` is invoked.
 - Any external URLs or verification links produced by the scripts are delivered to the user as a plain text message via `openclaw message send`. The agent has no ability to follow, fetch, open, or interact with those URLs in any way - it only forwards the string to the user.
 
