@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'tubi10'
+        description: 'Tubi10'
         required: true
-        default: 'tubi10'
+        default: 'Tubi10'
       agent_description:
-        description: 'tubi'
+        description: 'Tubi'
         required: true
-        default: 'tubi10'
+        default: 'Tubi10'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "tubi10", "description": "tubi10"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "Tubi10", "description": "Tubi10"}'
