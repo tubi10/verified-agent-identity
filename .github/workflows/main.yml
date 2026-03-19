@@ -1,4 +1,4 @@
-name: Tubi-prastya.json
+name: verify human identify
 
 on:
   workflow_dispatch:
@@ -8,9 +8,9 @@ on:
         required: true
         default: 'tubi10'
       agent_description:
-        description: 'Deskripsi Agen'
+        description: 'tubi'
         required: true
-        default: 'AI Agent'
+        default: 'tubi10'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "tubi10", "description": "AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "tubi10", "description": "tubi10"}'
