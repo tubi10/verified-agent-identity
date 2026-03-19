@@ -1,4 +1,4 @@
-name: Tubi-prastya.json
+name: Tub1-prastya
 
 on:
   workflow_dispatch:
